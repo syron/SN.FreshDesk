@@ -57,6 +57,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IBSS.FreshDesk.Models\IBSS.FreshDesk.Models.csproj">
+      <Project>{e20a3911-a1ef-4806-b03c-0187ac894819}</Project>
+      <Name>IBSS.FreshDesk.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

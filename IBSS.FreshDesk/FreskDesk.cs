@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IBSS.FreshDesk.Models;
+using IBSS.FreshDesk.Models.Responses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -19,7 +21,7 @@ namespace IBSS.FreshDesk
             BaseUri = new Uri(string.Format("http://{0}.freshdesk.com/", domain));
         }
 
-        private async Task<string> SendGetRequest(string relativeUrl)
+        private async Task<T> SendGetRequest<T>(string relativeUrl)
         {
             using (var client = new HttpClient())
             {
@@ -32,11 +34,11 @@ namespace IBSS.FreshDesk
                 HttpResponseMessage response = await client.GetAsync(relativeUrl);
                 if (response.IsSuccessStatusCode)
                 {
-                    string stringResult = await response.Content.ReadAsStringAsync();
-
                     try
                     {
-                        return stringResult;
+
+                        
+                        return await response.Content.ReadAsAsync<T>();
                     }
                     catch
                     {
@@ -52,11 +54,13 @@ namespace IBSS.FreshDesk
 
 
         #region Forums
-        public async Task<string> GetForum(int forumId)
+        public async Task<forum> GetForum(int forumId)
         {
             var relativeUrl = string.Format("discussions/forums/{0}.json", forumId);
 
-            return await SendGetRequest(relativeUrl);
+            var result = await SendGetRequest<response_forum>(relativeUrl);
+
+            return null;
         }
         #endregion
     }

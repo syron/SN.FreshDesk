@@ -8,3 +8,5 @@ C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\Syst
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\Newtonsoft.Json.xml
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.csprojResolveAssemblyReference.cache
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.Models.pdb

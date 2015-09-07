@@ -1,0 +1,5 @@
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\bin\Debug\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\bin\Debug\IBSS.FreshDesk.Models.pdb
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\obj\Debug\IBSS.FreshDesk.Models.csprojResolveAssemblyReference.cache
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\obj\Debug\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\obj\Debug\IBSS.FreshDesk.Models.pdb

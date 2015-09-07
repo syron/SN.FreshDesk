@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
+using IBSS.FreshDesk.Models;
 
 namespace IBSS.FreshDesk.Tests
 {
@@ -14,7 +15,7 @@ namespace IBSS.FreshDesk.Tests
         {
             FreskDesk fd = new FreskDesk(Settings.ApiKey, Settings.Domain);
             
-            string t = await fd.GetForum(1000227207);
+            forum t = await fd.GetForum(1000227207);
         }
     }
 }

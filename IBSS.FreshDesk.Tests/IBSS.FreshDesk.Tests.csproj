@@ -71,6 +71,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IBSS.FreshDesk.Models\IBSS.FreshDesk.Models.csproj">
+      <Project>{e20a3911-a1ef-4806-b03c-0187ac894819}</Project>
+      <Name>IBSS.FreshDesk.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IBSS.FreshDesk\IBSS.FreshDesk.csproj">
       <Project>{14795d5a-21da-4ce8-b707-fc855607efa7}</Project>
       <Name>IBSS.FreshDesk</Name>
