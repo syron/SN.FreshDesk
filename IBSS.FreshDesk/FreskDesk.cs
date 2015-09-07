@@ -15,6 +15,11 @@ namespace IBSS.FreshDesk
         private string AuthorizationHeaderValue { get; set; }
         private Uri BaseUri { get; set; }
 
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="apiKey">The api key.</param>
+        /// <param name="domain">Your freshdesk domain</param>
         public FreskDesk(string apiKey, string domain)
         {
             AuthorizationHeaderValue = Helpers.Base64Encode(string.Format("{0}:x", apiKey));
@@ -25,7 +30,6 @@ namespace IBSS.FreshDesk
         {
             using (var client = new HttpClient())
             {
-                // New code:
                 client.BaseAddress = this.BaseUri;
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -35,9 +39,7 @@ namespace IBSS.FreshDesk
                 if (response.IsSuccessStatusCode)
                 {
                     try
-                    {
-
-                        
+                    {                        
                         return await response.Content.ReadAsAsync<T>();
                     }
                     catch
@@ -54,6 +56,11 @@ namespace IBSS.FreshDesk
 
 
         #region Forums
+        /// <summary>
+        /// Gets forum details.
+        /// </summary>
+        /// <param name="forumId">The id of the forum.</param>
+        /// <returns>Forum details.</returns>
         public async Task<forum> GetForum(int forumId)
         {
             var relativeUrl = string.Format("discussions/forums/{0}.json", forumId);

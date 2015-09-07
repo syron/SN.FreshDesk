@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace IBSS.FreshDesk
 {
+    /// <summary>
+    /// Hellper class containing non-freshdesk functions.
+    /// </summary>
     public static class Helpers
     {
         /// <summary>
