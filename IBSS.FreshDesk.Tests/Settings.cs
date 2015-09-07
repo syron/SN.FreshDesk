@@ -16,5 +16,11 @@ namespace IBSS.FreshDesk.Tests
         /// The domain you are using, e.g. integrationsoftware
         /// </summary>
         public const string Domain = "YOUR-COMPANY-NAME";
+
+        public static string Base64Encode(string text)
+        {
+            byte[] encodedByte = System.Text.ASCIIEncoding.ASCII.GetBytes(text);
+            return Convert.ToBase64String(encodedByte);
+        }
     }
 }

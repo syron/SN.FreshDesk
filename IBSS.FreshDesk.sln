@@ -5,6 +5,13 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBSS.FreshDesk", "IBSS.FreshDesk\IBSS.FreshDesk.csproj", "{14795D5A-21DA-4CE8-B707-FC855607EFA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBSS.FreshDesk.Tests", "IBSS.FreshDesk.Tests\IBSS.FreshDesk.Tests.csproj", "{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{C8F7F7B0-6243-497C-9FE2-F9C70990E5FD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{14795D5A-21DA-4CE8-B707-FC855607EFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14795D5A-21DA-4CE8-B707-FC855607EFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14795D5A-21DA-4CE8-B707-FC855607EFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

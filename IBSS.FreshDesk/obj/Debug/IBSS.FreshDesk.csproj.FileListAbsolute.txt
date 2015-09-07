@@ -1,0 +1,4 @@
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.pdb
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.pdb
