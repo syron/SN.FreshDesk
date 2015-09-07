@@ -8,6 +8,9 @@ namespace IBSS.FreshDesk.Tests
 {
     public static class Settings
     {
+        /// <summary>
+        /// The api key used to call the FreshDesk API. See http://freshdesk.com/api#authentication and take a look at the section "Where can I find my API key?".
+        /// </summary>
         public const string ApiKey = "YOUR_API-Key";
         /// <summary>
         /// The domain you are using, e.g. integrationsoftware
