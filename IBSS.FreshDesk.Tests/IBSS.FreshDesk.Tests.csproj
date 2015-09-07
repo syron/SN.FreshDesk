@@ -70,6 +70,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IBSS.FreshDesk\IBSS.FreshDesk.csproj">
+      <Project>{14795d5a-21da-4ce8-b707-fc855607efa7}</Project>
+      <Name>IBSS.FreshDesk</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -2,3 +2,9 @@ C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.pdb
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.dll
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.pdb
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\IBSS.FreshDesk.dll.config
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk\obj\Debug\IBSS.FreshDesk.csprojResolveAssemblyReference.cache

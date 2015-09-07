@@ -11,3 +11,5 @@ C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\obj\Debu
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\obj\Debug\IBSS.FreshDesk.Tests.pdb
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\bin\Debug\nunit.framework.dll
 C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\bin\Debug\nunit.framework.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\bin\Debug\IBSS.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests\bin\Debug\IBSS.FreshDesk.pdb
