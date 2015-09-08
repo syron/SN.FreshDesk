@@ -48,3 +48,4 @@ IBSS.FreshDesk.Tests/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F
 */bin/Release/*
 */bin/Debug/*
 *.pdb
+*.suo

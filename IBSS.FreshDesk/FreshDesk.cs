@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace IBSS.FreshDesk
 {
@@ -50,7 +51,10 @@ namespace IBSS.FreshDesk
                 }
                 else
                 {
-                    throw new Exception("Response status not 200... TODO: Improved error message.");
+                    string msg = "";
+                    HttpStatusCode statusCode = response.StatusCode;
+
+                    throw new Exception(string.Format("Response status not 200... TODO: Improved error message.", (int)statusCode);
                 }
             }
         }
