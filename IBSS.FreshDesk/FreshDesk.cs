@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace IBSS.FreshDesk
 {
-    public class FreskDesk
+    public class FreshDesk
     {
         private string AuthorizationHeaderValue { get; set; }
         private Uri BaseUri { get; set; }
@@ -20,7 +20,7 @@ namespace IBSS.FreshDesk
         /// </summary>
         /// <param name="apiKey">The api key.</param>
         /// <param name="domain">Your freshdesk domain</param>
-        public FreskDesk(string apiKey, string domain)
+        public FreshDesk(string apiKey, string domain)
         {
             AuthorizationHeaderValue = Helpers.Base64Encode(string.Format("{0}:x", apiKey));
             BaseUri = new Uri(string.Format("http://{0}.freshdesk.com/", domain));
@@ -65,9 +65,23 @@ namespace IBSS.FreshDesk
         {
             var relativeUrl = string.Format("discussions/forums/{0}.json", forumId);
 
-            var result = await SendGetRequest<response_forum>(relativeUrl);
+            var response = await SendGetRequest<response_forum>(relativeUrl);
 
-            return null;
+            return response.forum;
+        }
+
+        /// <summary>
+        /// Gets topic details.
+        /// </summary>
+        /// <param name="topicId">The id of the topic.</param>
+        /// <returns>Topic details.</returns>
+        public async Task<topic> GetTopic(int topicId)
+        {
+            var relativeUrl = string.Format("/discussions/topics/{0}.json", topicId);
+
+            var response = await SendGetRequest<response_topic>(relativeUrl);
+
+            return response.topic;
         }
         #endregion
     }

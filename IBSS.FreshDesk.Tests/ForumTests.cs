@@ -13,9 +13,17 @@ namespace IBSS.FreshDesk.Tests
         [Test]
         public async void GetListOfForums()
         {
-            FreskDesk fd = new FreskDesk(Settings.ApiKey, Settings.Domain);
+            FreshDesk fd = new FreshDesk(Settings.ApiKey, Settings.Domain);
             
             forum t = await fd.GetForum(1000227207);
+        }
+
+        [Test]
+        public async void GetTopic()
+        {
+            FreshDesk fd = new FreshDesk(Settings.ApiKey, Settings.Domain);
+
+            topic t = await fd.GetTopic(1000065429);
         }
     }
 }

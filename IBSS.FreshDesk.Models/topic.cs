@@ -43,5 +43,7 @@ namespace IBSS.FreshDesk.Models
         public DateTime updated_at { get; set; }
         public int user_id { get; set; }
         public int user_votes { get; set; }
+
+        public List<post> posts { get; set; }
     }
 }
