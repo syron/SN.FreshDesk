@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("IBSS.FreshDesk")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("FreshDesk for .Net by Integration Software")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft Corporation")]
-[assembly: AssemblyProduct("IBSS.FreshDesk")]
-[assembly: AssemblyCopyright("Copyright © Microsoft Corporation 2015")]
+[assembly: AssemblyCompany("Integration Software")]
+[assembly: AssemblyProduct("IBSS FreshDesk for .Net")]
+[assembly: AssemblyCopyright("Copyright © Integration Software 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

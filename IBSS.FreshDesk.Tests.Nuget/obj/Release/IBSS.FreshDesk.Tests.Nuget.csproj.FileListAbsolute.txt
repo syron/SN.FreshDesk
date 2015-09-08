@@ -1,0 +1,13 @@
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\IBSS.FreshDesk.Tests.Nuget.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\IBSS.FreshDesk.Tests.Nuget.pdb
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\IBSS.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\Newtonsoft.Json.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\Newtonsoft.Json.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\obj\Release\IBSS.FreshDesk.Tests.Nuget.csprojResolveAssemblyReference.cache
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\obj\Release\IBSS.FreshDesk.Tests.Nuget.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Tests.Nuget\obj\Release\IBSS.FreshDesk.Tests.Nuget.pdb
