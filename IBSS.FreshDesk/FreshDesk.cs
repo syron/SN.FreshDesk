@@ -1,5 +1,6 @@
 ﻿using IBSS.FreshDesk.Models;
 using IBSS.FreshDesk.Models.Responses;
+using IBSS.FreshDesk.Models.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,34 @@ namespace IBSS.FreshDesk
             }
         }
 
+        private async Task<T> SendPostRequest<T>(string relativeUrl, object data)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = this.BaseUri;
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", this.AuthorizationHeaderValue);
+
+                HttpResponseMessage response = await client.PostAsJsonAsync(relativeUrl, data);
+                if (response.IsSuccessStatusCode)
+                {
+                    try
+                    {
+                        return await response.Content.ReadAsAsync<T>();
+                    }
+                    catch
+                    {
+                        throw;
+                    }
+                }
+                else
+                {
+                    throw new Exception("Response status not 200... TODO: Improved error message.");
+                }
+            }
+        }
+
 
         #region Forums
         /// <summary>
@@ -61,7 +90,7 @@ namespace IBSS.FreshDesk
         /// </summary>
         /// <param name="forumId">The id of the forum.</param>
         /// <returns>Forum details.</returns>
-        public async Task<forum> GetForum(int forumId)
+        public async Task<IBSS.FreshDesk.Models.Responses.forum> GetForum(int forumId)
         {
             var relativeUrl = string.Format("discussions/forums/{0}.json", forumId);
 
@@ -71,11 +100,25 @@ namespace IBSS.FreshDesk
         }
 
         /// <summary>
+        /// Creates a new forum.
+        /// </summary>
+        /// <param name="forum"></param>
+        /// <returns></returns>
+        public async Task<IBSS.FreshDesk.Models.Responses.forum> CreateForum(Models.Requests.forum forum)
+        {
+            var relativeUrl = "/discussions/forums.json";
+
+            var response = await SendPostRequest<response_forum>(relativeUrl, forum);
+
+            return response.forum;
+        }
+
+        /// <summary>
         /// Gets topic details.
         /// </summary>
         /// <param name="topicId">The id of the topic.</param>
         /// <returns>Topic details.</returns>
-        public async Task<topic> GetTopic(int topicId)
+        public async Task<IBSS.FreshDesk.Models.Responses.topic> GetTopic(int topicId)
         {
             var relativeUrl = string.Format("/discussions/topics/{0}.json", topicId);
 

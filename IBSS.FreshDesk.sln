@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBSS.FreshDesk.Tests", "IBS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{C8F7F7B0-6243-497C-9FE2-F9C70990E5FD}"
 	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 		IBSS.FreshDesk\IBSS.FreshDesk.nuspec = IBSS.FreshDesk\IBSS.FreshDesk.nuspec
 		README.md = README.md
 	EndProjectSection
