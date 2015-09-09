@@ -86,7 +86,22 @@ namespace IBSS.FreshDesk
                 }
             }
         }
+        #region Tickets
+        public async Task<List<ticket>> GetTickets()
+        {
+            var relativeUrl = string.Format("helpdesk/tickets.json");
 
+            var response = await SendGetRequest<List<ticket>>(relativeUrl);
+
+            return response;
+
+        }
+
+        public async Task<ticket> GetTicket()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
 
         #region Forums
         /// <summary>

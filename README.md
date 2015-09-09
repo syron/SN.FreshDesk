@@ -1,6 +1,6 @@
 # IBSS.FreshDesk .NET
 
-![alt text][buildstatus]
+<a href="https://ci.appveyor.com/project/syron/ibss-freshdesk" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/w0vft5yxfndhekcb?svg=true" /></a>
 
 
 
@@ -38,6 +38,3 @@ var forum = await fd.GetForum(FORUM_ID);
 FreshDesk fd = new FreshDesk("YOUR-API-KEY, "YOUR FRESHDESK DOMAIN");
 var forum = await fd.GetTopic(FORUM_ID);
 ```
-
-
-[buildstatus]: https://ci.appveyor.com/api/projects/status/w0vft5yxfndhekcb?svg=true "Build Status"
