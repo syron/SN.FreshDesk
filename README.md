@@ -20,14 +20,28 @@ Install-Package IBSS.FreshDesk
 
 #### Create FreshDesk Object
 ```C#
-FreshDesk fd = new FreshDesk("YOUR-API-KEY, "YOUR FRESHDESK DOMAIN");
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
+```
+
+#### Tickets
+
+##### Get List of Tickets
+```C#
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
+var tickets = await fd.GetTickets();
+```
+
+##### Get Ticket Details
+```C#
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
+var ticket = await fd.GetTicket(TICKET_ID);
 ```
 
 #### Forum
 
 ##### Get Forum Details
 ```C#
-FreshDesk fd = new FreshDesk("YOUR-API-KEY, "YOUR FRESHDESK DOMAIN");
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
 var forum = await fd.GetForum(FORUM_ID);
 ```
 
@@ -35,6 +49,6 @@ var forum = await fd.GetForum(FORUM_ID);
 
 ##### Get Topic Details
 ```C#
-FreshDesk fd = new FreshDesk("YOUR-API-KEY, "YOUR FRESHDESK DOMAIN");
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
 var forum = await fd.GetTopic(FORUM_ID);
 ```
