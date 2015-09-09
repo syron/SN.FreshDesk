@@ -43,7 +43,6 @@ Temporary Items
 .apdisk
 IBSS.FreshDesk/.vs/IBSS.FreshDesk/v14/.suo
 *.cache
-IBSS.FreshDesk.Tests/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
 
 **/bin/Debug/*.*
 **/bin/Release/*.*
