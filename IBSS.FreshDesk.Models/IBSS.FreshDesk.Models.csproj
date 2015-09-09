@@ -48,6 +48,7 @@
     <Compile Include="Requests\forum.cs" />
     <Compile Include="Requests\request_forum.cs" />
     <Compile Include="Responses\response_forum.cs" />
+    <Compile Include="Responses\response_ticket.cs" />
     <Compile Include="Responses\response_topic.cs" />
     <Compile Include="Responses\ticket.cs" />
     <Compile Include="Responses\topic.cs" />

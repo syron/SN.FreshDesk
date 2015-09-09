@@ -101,9 +101,9 @@ namespace IBSS.FreshDesk
         {
             var relativeUrl = string.Format("helpdesk/tickets/{0}.json", id);
 
-            var response = await SendGetRequest<ticket>(relativeUrl);
+            var response = await SendGetRequest<response_ticket>(relativeUrl);
 
-            return response;
+            return response.helpdesk_ticket;
         }
         #endregion
 
