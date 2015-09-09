@@ -16,5 +16,13 @@ namespace IBSS.FreshDesk.Tests
 
             List<ticket> t = await fd.GetTickets();
         }
+
+        [TestMethod]
+        public async Task GetTicket()
+        {
+            FreshDesk fd = new FreshDesk(Settings.ApiKey, Settings.Domain);
+
+            ticket t = await fd.GetTicket(598);
+        }
     }
 }
