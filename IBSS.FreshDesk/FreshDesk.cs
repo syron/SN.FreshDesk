@@ -54,7 +54,7 @@ namespace IBSS.FreshDesk
                     string msg = "";
                     HttpStatusCode statusCode = response.StatusCode;
 
-                    throw new Exception(string.Format("Response status not 200... TODO: Improved error message.", (int)statusCode);
+                    throw new Exception(string.Format("Response status not 200... TODO: Improved error message.", (int)statusCode));
                 }
             }
         }
