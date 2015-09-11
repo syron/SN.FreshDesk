@@ -105,6 +105,46 @@ namespace IBSS.FreshDesk
 
             return response.helpdesk_ticket;
         }
+
+        public async Task<ticket> UpdateTicket(request_ticket ticket)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ticket> PickTicket(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<bool> DeleteTicket(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ticket> RestoreTicket(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ticket> AssignTicket(int id, int user_id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<ticket_field>> GetTicketFields()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<note> AddNoteToTicket(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<note> AddNoteToTicketWIthAttachment(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
         #region Forums
