@@ -14,5 +14,6 @@ namespace IBSS.FreshDesk.Models.Responses
         public string name { get; set; }
         public int position { get; set; }
         public DateTime updated_at { get; set; }
+        public List<forum> forums { get; set; }
     }
 }

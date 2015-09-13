@@ -181,7 +181,11 @@ namespace IBSS.FreshDesk
 
         public async Task<response_forum_category> GetForumCategory(int id)
         {
-            throw new NotImplementedException();
+            var relativeUrl = string.Format("/discussions/categories/{0}.json", id);
+
+            var response = await SendGetRequest<response_forum_category>(relativeUrl);
+
+            return response;
         }
 
         public async Task<List<response_forum_category>> GetForumCategories()

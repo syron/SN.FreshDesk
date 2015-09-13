@@ -15,7 +15,7 @@ namespace IBSS.FreshDesk.Tests
     {
 
         [TestMethod]
-        public async Task GetListOfForums()
+        public async Task GetForum()
         {
             forum t = await fd.GetForum(1000227207);
         }
@@ -52,6 +52,14 @@ namespace IBSS.FreshDesk.Tests
         public async Task GetForumCategories()
         {
             var categories = await fd.GetForumCategories();
+        }
+
+        [TestMethod]
+        public async Task GetForumCategory()
+        {
+            var categories = await fd.GetForumCategories();
+
+            var category = await fd.GetForumCategory(categories.First().forum_category.id);
         }
     }
 }
