@@ -59,6 +59,36 @@ namespace IBSS.FreshDesk
             }
         }
 
+        private async Task<bool> SendDeleteRequest(string relativeUrl)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = this.BaseUri;
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", this.AuthorizationHeaderValue);
+
+                HttpResponseMessage response = await client.DeleteAsync(relativeUrl);
+                if (response.IsSuccessStatusCode)
+                {
+                    try
+                    {
+                        return true;
+                    }
+                    catch
+                    {
+                        throw;
+                    }
+                }
+                else
+                {
+                    throw new Exception("Response status not 200... TODO: Improved error message.");
+                }
+
+                return false;
+            }
+        }
+
         private async Task<T> SendPostRequest<T>(string relativeUrl, object data)
         {
             using (var client = new HttpClient())
@@ -186,9 +216,22 @@ namespace IBSS.FreshDesk
         {
             var relativeUrl = "/discussions/forums.json";
 
-            var response = await SendPostRequest<response_forum>(relativeUrl, forum);
+            var request_forum = new request_forum();
+            request_forum.forum = forum;
+
+            var response = await SendPostRequest<response_forum>(relativeUrl, request_forum);
 
             return response.forum;
+        }
+
+
+        public async Task<bool> DeleteForum(int id)
+        {
+            var relativeUrl = string.Format("/discussions/forums/{0}.json", id);
+
+            var response = await SendDeleteRequest(relativeUrl);
+
+            return response;
         }
 
         /// <summary>
