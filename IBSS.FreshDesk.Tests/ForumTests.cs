@@ -39,14 +39,13 @@ namespace IBSS.FreshDesk.Tests
             forum.forum_visibility = Models.forum_visibility.Anyone;
             forum.name = "Ticket Operations";
 
-            await fd.CreateForum(forum);
+            //await fd.CreateForum(forum);
         }
 
         [TestMethod]
         public async Task DeleteForum()
         {
-
-            await fd.DeleteForum(1000228599);
+            //await fd.DeleteForum(1000228599);
         }
 
         [TestMethod]
