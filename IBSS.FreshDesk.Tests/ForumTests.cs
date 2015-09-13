@@ -10,23 +10,37 @@ using System.Threading.Tasks;
 namespace IBSS.FreshDesk.Tests
 {
     [TestClass]
-    public class ForumTests
+    public class ForumTests : BaseTestClass
     {
 
         [TestMethod]
         public async Task GetListOfForums()
         {
-            FreshDesk fd = new FreshDesk(Settings.ApiKey, Settings.Domain);
-            
             forum t = await fd.GetForum(1000227207);
         }
 
         [TestMethod]
         public async Task GetTopic()
         {
-            FreshDesk fd = new FreshDesk(Settings.ApiKey, Settings.Domain);
-
             topic t = await fd.GetTopic(1000065429);
+        }
+
+        [TestMethod]
+        public async Task CreateForum()
+        {
+            Models.Requests.forum forum = new Models.Requests.forum();
+            forum.description = "Ticket related functions";
+            forum.forum_type = Models.forum_type.HowTo;
+            forum.forum_category_id = 1;
+            forum.forum_visibility = Models.forum_visibility.Anyone;
+            forum.name = "Ticket Operations";
+            //await fd.CreateForum(forum);
+        }
+
+        [TestMethod]
+        public async Task GetForumCategories()
+        {
+            var categories = await fd.GetForumCategories();
         }
     }
 }

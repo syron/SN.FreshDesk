@@ -41,17 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forum_type.cs" />
+    <Compile Include="forum_visibility.cs" />
+    <Compile Include="Requests\request_ticket.cs" />
     <Compile Include="Responses\cc_email.cs" />
+    <Compile Include="Responses\forum_category.cs" />
+    <Compile Include="Responses\helpdesk_note.cs" />
+    <Compile Include="Responses\note.cs" />
     <Compile Include="Responses\post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responses\forum.cs" />
     <Compile Include="Requests\forum.cs" />
     <Compile Include="Requests\request_forum.cs" />
     <Compile Include="Responses\response_forum.cs" />
+    <Compile Include="Responses\response_forum_category.cs" />
     <Compile Include="Responses\response_ticket.cs" />
     <Compile Include="Responses\response_topic.cs" />
     <Compile Include="Responses\ticket.cs" />
+    <Compile Include="Responses\ticket_field.cs" />
     <Compile Include="Responses\topic.cs" />
+    <Compile Include="topic_stamp.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

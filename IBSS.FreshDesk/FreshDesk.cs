@@ -141,13 +141,28 @@ namespace IBSS.FreshDesk
             throw new NotImplementedException();
         }
 
-        public async Task<note> AddNoteToTicketWIthAttachment(int id)
+        public async Task<note> AddNoteToTicketWithAttachment(int id)
         {
             throw new NotImplementedException();
         }
         #endregion
 
         #region Forums
+
+        public async Task<response_forum_category> GetForumCategory(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<response_forum_category>> GetForumCategories()
+        {
+            var relativeUrl = string.Format("discussions/categories.json");
+
+            var response = await SendGetRequest<List<response_forum_category>>(relativeUrl);
+
+            return response;
+        }
+
         /// <summary>
         /// Gets forum details.
         /// </summary>
