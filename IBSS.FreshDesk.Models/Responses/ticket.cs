@@ -20,11 +20,11 @@ namespace IBSS.FreshDesk.Models.Responses
         public string subject { get; set; }
         public string description { get; set; }
         public string description_html { get; set; }
-        public int status { get; set; }
+        public ticket_status status { get; set; }
         public string status_name { get; set; }
-        public int priority { get; set; }
+        public ticket_priority priority { get; set; }
         public string priority_name { get; set; }
-        public int source { get; set; }
+        public ticket_source_type source { get; set; }
         public string source_name { get; set; }
         public bool urgent { get; set; }
         public bool deleted { get; set; }
