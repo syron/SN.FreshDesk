@@ -8,6 +8,12 @@ namespace IBSS.FreshDesk.Models
 {
     public class create_ticket
     {
+        public create_ticket()
+        {
+            priority = ticket_priority.Low;
+            status = ticket_status.Open;
+        }
+
         public string description { get; set; }
         public string subject { get; set; }
         public string email { get; set; }

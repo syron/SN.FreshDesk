@@ -32,12 +32,16 @@ namespace IBSS.FreshDesk.Tests
             ticket.description = "API Created ticket";
             ticket.subject = "New ticket - support needed";
             ticket.email = "rwlmayer@gmail.com";
-            ticket.priority = ticket_priority.Low;
-            ticket.status = ticket_status.Open;
+            ticket.priority = ticket_priority.High;
+            ticket.status = ticket_status.Pending;
 
             t.helpdesk_ticket = ticket;
 
-            await fd.CreateTicket(t);
+            var createdTicket = await fd.CreateTicket(t);
+
+            await fd.DeleteTicket(createdTicket.id);
         }
+
+
     }
 }

@@ -159,7 +159,6 @@ namespace IBSS.FreshDesk
             var response = await SendGetRequest<List<ticket>>(relativeUrl);
 
             return response;
-
         }
 
         public async Task<ticket> GetTicket(int id)
@@ -183,7 +182,11 @@ namespace IBSS.FreshDesk
 
         public async Task<bool> DeleteTicket(int id)
         {
-            throw new NotImplementedException();
+            var relativeUrl = string.Format("/helpdesk/tickets/{0}.json", id);
+
+            var response = await SendDeleteRequest(relativeUrl);
+
+            return response;
         }
 
         public async Task<ticket> RestoreTicket(int id)
