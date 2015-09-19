@@ -7,6 +7,7 @@ using System.Linq;
 using IBSS.FreshDesk.Models.Responses;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
+using IBSS.FreshDesk.Models;
 
 namespace IBSS.FreshDesk.Tests
 {
@@ -32,7 +33,7 @@ namespace IBSS.FreshDesk.Tests
             // get categories
             var categories = await fd.GetForumCategories();
 
-            Models.Requests.forum forum = new Models.Requests.forum();
+            forum forum = new forum();
             forum.description = "Ticket related functions";
             forum.forum_type = Models.forum_type.HowTo;
             forum.forum_category_id = categories.First().forum_category.id;

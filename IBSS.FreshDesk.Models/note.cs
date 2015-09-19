@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IBSS.FreshDesk.Models.Responses
+namespace IBSS.FreshDesk.Models
 {
-    public class ticket_field
+    public class note
     {
+
     }
 }

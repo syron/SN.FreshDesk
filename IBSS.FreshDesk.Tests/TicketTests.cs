@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using IBSS.FreshDesk.Models.Responses;
 using System.Threading.Tasks;
+using IBSS.FreshDesk.Models;
 
 namespace IBSS.FreshDesk.Tests
 {

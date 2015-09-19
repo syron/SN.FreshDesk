@@ -255,7 +255,7 @@ namespace IBSS.FreshDesk
         /// </summary>
         /// <param name="forumId">The id of the forum.</param>
         /// <returns>Forum details.</returns>
-        public async Task<IBSS.FreshDesk.Models.Responses.forum> GetForum(int forumId)
+        public async Task<forum> GetForum(int forumId)
         {
             var relativeUrl = string.Format("discussions/forums/{0}.json", forumId);
 
@@ -269,7 +269,7 @@ namespace IBSS.FreshDesk
         /// </summary>
         /// <param name="forum"></param>
         /// <returns></returns>
-        public async Task<IBSS.FreshDesk.Models.Responses.forum> CreateForum(Models.Requests.forum forum)
+        public async Task<forum> CreateForum(forum forum)
         {
             var relativeUrl = "/discussions/forums.json";
 
@@ -296,7 +296,7 @@ namespace IBSS.FreshDesk
         /// </summary>
         /// <param name="topicId">The id of the topic.</param>
         /// <returns>Topic details.</returns>
-        public async Task<IBSS.FreshDesk.Models.Responses.topic> GetTopic(int topicId)
+        public async Task<topic> GetTopic(int topicId)
         {
             var relativeUrl = string.Format("/discussions/topics/{0}.json", topicId);
 
