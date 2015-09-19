@@ -12,9 +12,10 @@ namespace IBSS.FreshDesk.Models.Requests
         public request_ticket()
         {
             cc_emailList = new List<string>();
+            helpdesk_ticket = new create_ticket();
         }
 
-        public ticket helpdesk_ticket { get; set; }
+        public create_ticket helpdesk_ticket { get; set; }
         
         public string cc_emails { get
             {

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="create_ticket.cs" />
     <Compile Include="forum_type.cs" />
     <Compile Include="forum_visibility.cs" />
     <Compile Include="Requests\request_forum_category.cs" />
