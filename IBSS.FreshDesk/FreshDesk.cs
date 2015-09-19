@@ -82,10 +82,36 @@ namespace IBSS.FreshDesk
                 }
                 else
                 {
-                    throw new Exception("Response status not 200... TODO: Improved error message.");
+                    return false;
                 }
+            }
+        }
 
-                return false;
+        private async Task<bool> SendPutRequest(string relativeUrl, object data)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = this.BaseUri;
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", this.AuthorizationHeaderValue);
+
+                HttpResponseMessage response = await client.PutAsJsonAsync(relativeUrl, data);
+                if (response.IsSuccessStatusCode)
+                {
+                    try
+                    {
+                        return true;
+                    }
+                    catch
+                    {
+                        throw;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
 
@@ -117,6 +143,15 @@ namespace IBSS.FreshDesk
             }
         }
         #region Tickets
+        public async Task<ticket> CreateTicket(request_ticket ticket)
+        {
+            var relativeUrl = string.Format("/helpdesk/tickets.json");
+
+            var response = await SendPostRequest<response_ticket>(relativeUrl, ticket);
+
+            return response.helpdesk_ticket;
+        }
+
         public async Task<List<ticket>> GetTickets()
         {
             var relativeUrl = string.Format("helpdesk/tickets.json");
@@ -177,7 +212,9 @@ namespace IBSS.FreshDesk
         }
         #endregion
 
-        #region Forums
+
+
+        #region FORUM CATEGORIES
 
         public async Task<response_forum_category> GetForumCategory(int id)
         {
@@ -190,12 +227,28 @@ namespace IBSS.FreshDesk
 
         public async Task<List<response_forum_category>> GetForumCategories()
         {
-            var relativeUrl = string.Format("discussions/categories.json");
+            var relativeUrl = string.Format("/discussions/categories.json");
 
             var response = await SendGetRequest<List<response_forum_category>>(relativeUrl);
 
             return response;
         }
+
+        public async Task<response_forum_category> CreateForumCategory(forum_category forum_category)
+        {
+            var relativeUrl = string.Format("/discussions/categories.json");
+
+            var request_forum_category = new request_forum_category();
+            request_forum_category.forum_category = forum_category;
+
+            var response = await SendPostRequest<response_forum_category>(relativeUrl, request_forum_category);
+
+            return response;
+        }
+
+        #endregion
+
+        #region Forums
 
         /// <summary>
         /// Gets forum details.

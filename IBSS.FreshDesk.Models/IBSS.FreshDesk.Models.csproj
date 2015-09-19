@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="forum_type.cs" />
     <Compile Include="forum_visibility.cs" />
+    <Compile Include="Requests\request_forum_category.cs" />
     <Compile Include="Requests\request_ticket.cs" />
     <Compile Include="Responses\cc_email.cs" />
     <Compile Include="Responses\forum_category.cs" />
@@ -59,6 +60,9 @@
     <Compile Include="Responses\response_topic.cs" />
     <Compile Include="Responses\ticket.cs" />
     <Compile Include="Responses\ticket_field.cs" />
+    <Compile Include="Responses\ticket_priority.cs" />
+    <Compile Include="Responses\ticket_source_type.cs" />
+    <Compile Include="Responses\ticket_status.cs" />
     <Compile Include="Responses\topic.cs" />
     <Compile Include="topic_stamp.cs" />
   </ItemGroup>

@@ -8,6 +8,7 @@ Links List:
 
 * [NuGet Package Site](https://www.nuget.org/packages/IBSS.FreshDesk/)
 * [Integration Software](http://www.integrationsoftware.se/)
+* [FreshDesk API](http://freshdesk.com/api)
 
 
 ### Get Started

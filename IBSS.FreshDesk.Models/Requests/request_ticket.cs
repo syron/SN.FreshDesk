@@ -9,6 +9,19 @@ namespace IBSS.FreshDesk.Models.Requests
 {
     public class request_ticket
     {
+        public request_ticket()
+        {
+            cc_emailList = new List<string>();
+        }
+
         public ticket helpdesk_ticket { get; set; }
+        
+        public string cc_emails { get
+            {
+                return string.Join(",", cc_emailList);
+            }
+        }
+
+        public List<string> cc_emailList { get; set; }
     }
 }
