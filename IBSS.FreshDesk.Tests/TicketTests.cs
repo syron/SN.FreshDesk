@@ -54,6 +54,10 @@ namespace IBSS.FreshDesk.Tests
             
 
             await fd.DeleteTicket(createdTicket.display_id);
+
+            await fd.RestoreTicket(createdTicket.display_id);
+
+            await fd.DeleteTicket(createdTicket.display_id);
         }
 
 

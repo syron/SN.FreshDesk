@@ -58,6 +58,7 @@
     <Compile Include="Requests\request_update_ticket.cs" />
     <Compile Include="Responses\response_forum.cs" />
     <Compile Include="Responses\response_forum_category.cs" />
+    <Compile Include="Responses\response_restore_ticket.cs" />
     <Compile Include="Responses\response_ticket.cs" />
     <Compile Include="Responses\response_topic.cs" />
     <Compile Include="ticket.cs" />
