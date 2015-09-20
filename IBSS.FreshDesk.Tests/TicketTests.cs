@@ -42,6 +42,9 @@ namespace IBSS.FreshDesk.Tests
             createdTicket = await fd.GetTicket(createdTicket.display_id);
 
 
+            await fd.AssignTicket(createdTicket.display_id, 1000734716);
+
+
             update_ticket up_ticket = new update_ticket(createdTicket);
 
             up_ticket.status = ticket_status.Closed;

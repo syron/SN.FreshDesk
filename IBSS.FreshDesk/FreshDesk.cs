@@ -202,9 +202,13 @@ namespace IBSS.FreshDesk
             return response;
         }
 
-        public async Task<ticket> AssignTicket(int id, int user_id)
+        public async Task<List<response_restore_ticket>> AssignTicket(int id, int user_id)
         {
-            throw new NotImplementedException();
+            var relativeUrl = string.Format("/helpdesk/tickets/{0}/assign.json?responder_id={1}", id, user_id);
+
+            var response = await SendPutRequest<List<response_restore_ticket>>(relativeUrl, null);
+
+            return response;
         }
 
         public async Task<List<ticket_field>> GetTicketFields()
