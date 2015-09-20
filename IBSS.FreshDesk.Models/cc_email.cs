@@ -8,6 +8,11 @@ namespace IBSS.FreshDesk.Models
 {
     public class cc_email
     {
+        public cc_email()
+        {
+            cc_emails = new List<string>();
+            fwd_emails = new List<string>();
+        }
         /// <summary>
         /// List of emails being cc'd to.
         /// </summary>

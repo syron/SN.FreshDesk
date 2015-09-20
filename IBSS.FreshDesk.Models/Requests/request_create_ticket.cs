@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace IBSS.FreshDesk.Models.Requests
 {
-    public class request_ticket
+    public class request_create_ticket
     {
-        public request_ticket()
+        public request_create_ticket()
         {
             cc_emailList = new List<string>();
             helpdesk_ticket = new create_ticket();

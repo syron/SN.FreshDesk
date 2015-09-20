@@ -87,7 +87,7 @@ namespace IBSS.FreshDesk
             }
         }
 
-        private async Task<bool> SendPutRequest(string relativeUrl, object data)
+        private async Task<T> SendPutRequest<T>(string relativeUrl, object data)
         {
             using (var client = new HttpClient())
             {
@@ -101,7 +101,7 @@ namespace IBSS.FreshDesk
                 {
                     try
                     {
-                        return true;
+                        return await response.Content.ReadAsAsync<T>();
                     }
                     catch
                     {
@@ -110,7 +110,7 @@ namespace IBSS.FreshDesk
                 }
                 else
                 {
-                    return false;
+                    throw new Exception("Response status not 200... TODO: Improved error message.");
                 }
             }
         }
@@ -143,7 +143,7 @@ namespace IBSS.FreshDesk
             }
         }
         #region Tickets
-        public async Task<ticket> CreateTicket(request_ticket ticket)
+        public async Task<ticket> CreateTicket(request_create_ticket ticket)
         {
             var relativeUrl = string.Format("/helpdesk/tickets.json");
 
@@ -170,9 +170,13 @@ namespace IBSS.FreshDesk
             return response.helpdesk_ticket;
         }
 
-        public async Task<ticket> UpdateTicket(request_ticket ticket)
+        public async Task<ticket> UpdateTicket(int id, request_update_ticket ticket)
         {
-            throw new NotImplementedException();
+            var relativeUrl = string.Format("helpdesk/tickets/{0}.json", id);
+
+            var response = await SendPutRequest<response_ticket>(relativeUrl, ticket);
+
+            return response.helpdesk_ticket;
         }
 
         public async Task<ticket> PickTicket(int id)
