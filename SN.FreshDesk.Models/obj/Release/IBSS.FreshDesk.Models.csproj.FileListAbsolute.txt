@@ -1,0 +1,4 @@
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\bin\Release\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\bin\Release\IBSS.FreshDesk.Models.pdb
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\obj\Release\IBSS.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\IBSS.FreshDesk\IBSS.FreshDesk.Models\obj\Release\IBSS.FreshDesk.Models.pdb

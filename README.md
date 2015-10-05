@@ -1,13 +1,11 @@
-# IBSS.FreshDesk .NET
+# SN.FreshDesk .NET
 
 <a href="https://ci.appveyor.com/project/syron/ibss-freshdesk" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/w0vft5yxfndhekcb?svg=true" /></a>
 
 
-
 Links List:
 
-* [NuGet Package Site](https://www.nuget.org/packages/IBSS.FreshDesk/)
-* [Integration Software](http://www.integrationsoftware.se/)
+* [NuGet Package Site](https://www.nuget.org/packages/FreshDesk/)
 * [FreshDesk API](http://freshdesk.com/api)
 
 
@@ -16,7 +14,7 @@ Description coming soon.
 
 #### Install NuGet Package
 ```C#
-Install-Package IBSS.FreshDesk
+Install-Package SN.FreshDesk
 ```
 
 #### Create FreshDesk Object
