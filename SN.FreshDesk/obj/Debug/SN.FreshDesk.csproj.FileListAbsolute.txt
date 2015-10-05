@@ -10,3 +10,15 @@ C:\Users\superuser\Documents\GitHub\FreshDesk\SN.FreshDesk\bin\Debug\System.Net.
 C:\Users\superuser\Documents\GitHub\FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.csprojResolveAssemblyReference.cache
 C:\Users\superuser\Documents\GitHub\FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.dll
 C:\Users\superuser\Documents\GitHub\FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\SN.FreshDesk.dll.config
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\SN.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\SN.FreshDesk.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\SN.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\SN.FreshDesk.Models.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.csprojResolveAssemblyReference.cache
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk\obj\Debug\SN.FreshDesk.pdb

@@ -1,0 +1,15 @@
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.Tests.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.Tests.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\Newtonsoft.Json.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\nunit.framework.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.Models.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.Models.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\SN.FreshDesk.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\Newtonsoft.Json.xml
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\nunit.framework.xml
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\obj\Release\SN.FreshDesk.Tests.csprojResolveAssemblyReference.cache
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\obj\Release\SN.FreshDesk.Tests.dll
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Tests\obj\Release\SN.FreshDesk.Tests.pdb

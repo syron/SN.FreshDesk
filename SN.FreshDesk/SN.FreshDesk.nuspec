@@ -4,11 +4,11 @@
     <id>$id$</id>
     <version>1.0.0.4</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <authors>Robert Mayer</authors>
+    <owners>Robert Mayer</owners>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
     <projectUrl>https://github.com/syron/SN.FreshDesk</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>http://freshdesk.com/files/1813/9885/7672/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Implemented most of ticket functions.</releaseNotes>

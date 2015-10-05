@@ -1,11 +1,11 @@
 # SN.FreshDesk .NET
 
-<a href="https://ci.appveyor.com/project/syron/ibss-freshdesk" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/w0vft5yxfndhekcb?svg=true" /></a>
+<a href="https://ci.appveyor.com/project/syron/sn-freshdesk" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/tua55bko590mtoax?svg=true" /></a>
 
 
 Links List:
 
-* [NuGet Package Site](https://www.nuget.org/packages/FreshDesk/)
+* [NuGet Package Site](https://www.nuget.org/packages/SN.FreshDesk/)
 * [FreshDesk API](http://freshdesk.com/api)
 
 
