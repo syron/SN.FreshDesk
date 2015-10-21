@@ -2,3 +2,4 @@ C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\bin\Release
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\bin\Release\SN.FreshDesk.Models.pdb
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Release\SN.FreshDesk.Models.dll
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Release\SN.FreshDesk.Models.pdb
+C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Release\SN.FreshDesk.Models.csprojResolveAssemblyReference.cache

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SN.FreshDesk.Models
 {
+    /// <summary>
+    /// List of emails to cc and forward to.
+    /// </summary>
     public class cc_email
     {
         public cc_email()
