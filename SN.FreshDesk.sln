@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9362E038
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SN.FreshDesk.Tests", "SN.FreshDesk.Tests\SN.FreshDesk.Tests.csproj", "{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{12B99287-AD5E-40D0-A096-75A3EA3B9E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SN.FreshDesk.Client.ConsoleApp", "SN.FreshDesk.Client.ConsoleApp\SN.FreshDesk.Client.ConsoleApp.csproj", "{46276FE0-3C64-42A4-B8EE-28D867F409E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SN.FreshDesk.Connector", "SN.FreshDesk.Connector\SN.FreshDesk.Connector.csproj", "{E07A12FD-EB59-46ED-8046-0BB631262475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,11 +43,21 @@ Global
 		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46276FE0-3C64-42A4-B8EE-28D867F409E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46276FE0-3C64-42A4-B8EE-28D867F409E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46276FE0-3C64-42A4-B8EE-28D867F409E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46276FE0-3C64-42A4-B8EE-28D867F409E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07A12FD-EB59-46ED-8046-0BB631262475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07A12FD-EB59-46ED-8046-0BB631262475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07A12FD-EB59-46ED-8046-0BB631262475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07A12FD-EB59-46ED-8046-0BB631262475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{81CBCA5E-EC92-42C7-9A96-D92D1A1560CC} = {9362E038-2855-459A-85AD-F0571710A756}
+		{46276FE0-3C64-42A4-B8EE-28D867F409E9} = {12B99287-AD5E-40D0-A096-75A3EA3B9E42}
+		{E07A12FD-EB59-46ED-8046-0BB631262475} = {12B99287-AD5E-40D0-A096-75A3EA3B9E42}
 	EndGlobalSection
 EndGlobal

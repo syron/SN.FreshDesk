@@ -11,7 +11,7 @@ namespace SN.FreshDesk.Tests
         /// <summary>
         /// The api key used to call the FreshDesk API. See http://freshdesk.com/api#authentication and take a look at the section "Where can I find my API key?".
         /// </summary>
-        public const string ApiKey = "VO3WSsWn3KguXtWNfyQK";
+        public const string ApiKey = "";
         /// <summary>
         /// The domain you are using, e.g. integrationsoftware
         /// </summary>

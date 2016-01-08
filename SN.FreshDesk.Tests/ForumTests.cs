@@ -19,6 +19,8 @@ namespace SN.FreshDesk.Tests
         public async Task GetForum()
         {
             forum t = await fd.GetForum(1000227207);
+
+            NUnit.Framework.Assert.IsNotNull(t);
         }
 
         [TestMethod]

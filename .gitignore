@@ -44,6 +44,8 @@ Temporary Items
 SN.FreshDesk/.vs/SN.FreshDesk/v14/.suo
 *.cache
 
+bin/
+
 **/bin/Debug/*.*
 **/bin/Release/*.*
 *.pdb
