@@ -12,7 +12,7 @@ using System.Net;
 
 namespace SN.FreshDesk
 {
-    public class FreshDesk
+    public partial class FreshDesk
     {
         private string AuthorizationHeaderValue { get; set; }
         private Uri BaseUri { get; set; }
@@ -25,7 +25,7 @@ namespace SN.FreshDesk
         public FreshDesk(string apiKey, string domain)
         {
             AuthorizationHeaderValue = Helpers.Base64Encode(string.Format("{0}:x", apiKey));
-            BaseUri = new Uri(string.Format("http://{0}.freshdesk.com/", domain));
+            BaseUri = new Uri(string.Format("https://{0}.freshdesk.com/", domain));
         }
 
         private async Task<T> SendGetRequest<T>(string relativeUrl)
@@ -41,13 +41,13 @@ namespace SN.FreshDesk
                 if (response.IsSuccessStatusCode)
                 {
                     try
-                    {                        
+                    {
                         return await response.Content.ReadAsAsync<T>();
                     }
                     catch
                     {
                         throw;
-                    }
+                    }   
                 }
                 else
                 {

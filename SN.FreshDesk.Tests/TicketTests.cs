@@ -21,6 +21,7 @@ namespace SN.FreshDesk.Tests
         public async Task GetTicket()
         {
             ticket t = await fd.GetTicket(640);
+            Assert.AreEqual(t.id, 640);
         }
 
         [TestMethod]
