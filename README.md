@@ -44,6 +44,14 @@ Install-Package SN.FreshDesk
 FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
 ```
 
+##### Customers
+
+###### Get List of Customers
+```C#
+FreshDesk fd = new FreshDesk("YOUR-API-KEY", "YOUR FRESHDESK DOMAIN");
+var customers = await fd.GetCustomers();
+```
+
 ##### Tickets
 
 ###### Get List of Tickets
