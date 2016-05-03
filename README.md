@@ -1,7 +1,6 @@
 # SN.FreshDesk .NET
 
 <a href="https://ci.appveyor.com/project/syron/sn-freshdesk" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/tua55bko590mtoax?svg=true" /></a>
-<a href="https://www.nuget.org/packages/sn.FreshDesk/" target="_blank"><img src="https://img.shields.io/nuget/dt/SN.FreshDesk.svg" /></a>
 <a href="https://www.nuget.org/packages/sn.FreshDesk/" target="_blank"><img src="https://img.shields.io/nuget/v/SN.FreshDesk.svg" /></a>
 
 ##### Links

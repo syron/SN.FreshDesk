@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>$id$</id>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <title>$title$</title>
     <authors>Robert Mayer,MarkMilfordMe</authors>
     <owners>Robert Mayer</owners>
@@ -11,7 +11,7 @@
     <iconUrl>http://freshdesk.com/files/1813/9885/7672/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Added support for retrieving customers.</releaseNotes>
+    <releaseNotes>Improved exceptions for all HTTP requests.</releaseNotes>
     <copyright>Copyright 2016 Robert Mayer</copyright>
     <tags>FreshDesk</tags>
   </metadata>
