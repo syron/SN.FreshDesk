@@ -44,10 +44,11 @@ namespace SN.FreshDesk
                     {
                         return await response.Content.ReadAsAsync<T>();
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        throw;
-                    }   
+                        var nex = new Exception(string.Format("An exception occurred during the request - FreshDesk responded text/html as MimeType. Please check your API credentials and also inner exception for additional information."), ex);
+                        throw nex;
+                    } 
                 }
                 else
                 {

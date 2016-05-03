@@ -8,3 +8,7 @@ C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\bin\Debug\S
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Debug\SN.FreshDesk.Models.csprojResolveAssemblyReference.cache
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Debug\SN.FreshDesk.Models.dll
 C:\Users\superuser\Documents\GitHub\SN.FreshDesk\SN.FreshDesk.Models\obj\Debug\SN.FreshDesk.Models.pdb
+C:\Users\superuser\Desktop\Git\SN.FreshDesk\SN.FreshDesk.Models\bin\Debug\SN.FreshDesk.Models.dll
+C:\Users\superuser\Desktop\Git\SN.FreshDesk\SN.FreshDesk.Models\bin\Debug\SN.FreshDesk.Models.pdb
+C:\Users\superuser\Desktop\Git\SN.FreshDesk\SN.FreshDesk.Models\obj\Debug\SN.FreshDesk.Models.dll
+C:\Users\superuser\Desktop\Git\SN.FreshDesk\SN.FreshDesk.Models\obj\Debug\SN.FreshDesk.Models.pdb
