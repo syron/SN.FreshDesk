@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agent.cs" />
     <Compile Include="create_ticket.cs" />
     <Compile Include="customer.cs" />
     <Compile Include="forum_type.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="forum.cs" />
     <Compile Include="Requests\request_forum.cs" />
     <Compile Include="Requests\request_update_ticket.cs" />
+    <Compile Include="Responses\response_agents.cs" />
     <Compile Include="Responses\response_customer.cs" />
     <Compile Include="Responses\response_forum.cs" />
     <Compile Include="Responses\response_forum_category.cs" />
