@@ -15,6 +15,16 @@ namespace SN.FreshDesk.Tests
         /// <summary>
         /// The domain you are using, e.g. integrationsoftware
         /// </summary>
-        public const string Domain = "integrationsoftware";
+        public const string Domain = "";
+
+        /// <summary>
+        /// The username to authenticate with
+        /// </summary>
+        public const string Username = "";
+
+        /// <summary>
+        /// The Password to authenticate with
+        /// </summary>
+        public const string Password = "";
     }
 }

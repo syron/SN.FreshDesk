@@ -9,9 +9,43 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.Threading;
+using System.Diagnostics;
 
 namespace SN.FreshDesk
 {
+    public class LoggingHandler : DelegatingHandler
+    {
+        public LoggingHandler(HttpMessageHandler innerHandler)
+            : base(innerHandler)
+        {
+        }
+
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            Debug.WriteLine("Request:");
+            Debug.WriteLine(request.ToString());
+            if (request.Content != null)
+            {
+                Debug.WriteLine(await request.Content.ReadAsStringAsync());
+            }
+            Debug.WriteLine("");
+            HttpResponseMessage response;
+
+            response = await base.SendAsync(request, cancellationToken);
+           
+            Debug.WriteLine("Response:");
+            Debug.WriteLine(response.ToString());
+            if (response.Content != null)
+            {
+                Debug.WriteLine(await response.Content.ReadAsStringAsync());
+            }
+            Debug.WriteLine("");
+
+            return response;
+        }
+    }
+
     public partial class FreshDesk
     {
         private string AuthorizationHeaderValue { get; set; }
@@ -27,11 +61,17 @@ namespace SN.FreshDesk
             AuthorizationHeaderValue = Helpers.Base64Encode(string.Format("{0}:x", apiKey));
             BaseUri = new Uri(string.Format("https://{0}.freshdesk.com/", domain));
         }
+        public FreshDesk(string username, string password, string domain)
+        {
+            AuthorizationHeaderValue = Helpers.Base64Encode(string.Format("{0}:{1}", username, password));
+            BaseUri = new Uri(string.Format("https://{0}.freshdesk.com/", domain));
+        }
 
         private async Task<T> SendGetRequest<T>(string relativeUrl)
         {
-            using (var client = new HttpClient())
+            using (var client = new HttpClient(new LoggingHandler(new HttpClientHandler())))
             {
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
                 client.BaseAddress = this.BaseUri;
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -146,6 +186,17 @@ namespace SN.FreshDesk
                 }
             }
         }
+
+        #region Agents
+        public async Task<agent> GetCurrentlyAuthenticatedAgent()
+        {
+            var relativeUrl = string.Format("/api/v2/agents/me");
+            var response = await SendGetRequest<agent>(relativeUrl);
+            return response;
+        }
+
+        #endregion
+
         #region Tickets
         public async Task<ticket> CreateTicket(request_create_ticket ticket)
         {

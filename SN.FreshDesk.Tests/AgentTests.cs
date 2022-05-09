@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 namespace SN.FreshDesk.Tests
 {
     [TestClass]
-    public class BaseTestClass
+    public class AgentTests : BaseTestClass
     {
-        protected FreshDesk fd = null;
-
-        public BaseTestClass()
+        [TestMethod]
+        public async Task GetCurrentAgent()
         {
-             fd = new FreshDesk(Settings.Username,Settings.Password, Settings.Domain);
+            var a =  await fd.GetCurrentlyAuthenticatedAgent();
+            Assert.IsTrue(a.available);
         }
+
     }
 }
